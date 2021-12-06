@@ -41,9 +41,10 @@ No | HW Sensor | Estimated Frequency |  Category |
 4 | Location | Once every minute | Small |
 5 | Magnetic Field | up to 10 samples per second | Big |
 6 | Pressure | up to 10 samples per second | Big |
+
 *Table 1. HW sensors.*
 
-No || SW Sensor | Estimated Frequency | Category |
+No | SW Sensor | Estimated Frequency | Category |
 |-------|--------|---------|---------|
 7 | Airplane Mode (ON/OFF) | On change | Small |
 8 | Battery Charge (ON/OFF) | On change | Small |
@@ -67,6 +68,7 @@ No || SW Sensor | Estimated Frequency | Category |
 26 | User Presence |  On change | Small  |
 27 | WIFI Network Connected to | On change | Small |
 28 | WIFI Networks Available | Once every minute | Small |
+
 *Table 2. SW sensors.*
 
 
@@ -78,6 +80,7 @@ No | HW Sensor | Estimated Frequency |  Category |
 4 | Location | Once every minute | Small |
 5 | Magnetic Field | up to 10 samples per second | Big |
 6 | Pressure | up to 10 samples per second | Big |
+
 *Table 3. Questionnaire sensors.*
 
 # Data collection
