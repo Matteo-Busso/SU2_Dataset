@@ -20,7 +20,7 @@ Time diaries are a classic [data collection tool](), where respondents are asked
 3. “Who is with you?” 
 4. “What is your mood?” 
 
-![TD_Labels]()
+![TD_Labels](https://github.com/Gengis-Khan/SU2Dataset/blob/gh-pages/images/TD_Labels%v2.png)
 
 During the month of data collection, time diaries were asked every 30 minutes for the first two weeks and every 1 hour for the second two weeks. Therefore, we collected 48 labels per days per person for the first two weeks, and 24 for the second two weeks, for a total of 114.830 labels.
 
