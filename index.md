@@ -1,4 +1,48 @@
-## Welcome to GitHub Pages
+# Dataset Description
+The dataset is composed by three sources of data: (i) Online questionnaire (synchronic); (ii) Time Diaries (Diachronic); Sensor data (Diachronic).
+
+## Online questionnaires 
+Were used to invite the students, to evaluate the app, and to understand their habits and routine. They are composed by attributes regarding:
+1. Socio-demographics: age, gender, students’ accommodation(s) and flat mates
+2. Habits about travel, occupation, and university experience
+3. Psycho-social profile, concerning:
+- personality, collected with a 10-item short version of the [Big Five]() Inventory-44
+- attitude towards procrastination [Irrational Procrastination Scale (IPS)]()
+- smartphone habits [Smartphone Addiction Scale (SAV-SV)]()
+- perceived stress [Perceived Stress Scale]()
+
+The complete questionnaire can be found [here]()
+
+## Time Diaries
+Time diaries are a classic [data collection tool](), where respondents are asked to indicate three main dimensions of their everyday life: the activities performed, the locations they visit, and the people around them. In this case we administered a version, following the [HETUS]() standard, implemented in the app [iLog](). Participants received a notification on their smartphone with four questions (see Figure), namely: 
+1. “What are you doing?” 
+2. “Where are you?” 
+3. “Who is with you?” 
+4. “What is your mood?” 
+
+![TD_Labels]()
+
+During the month of data collection, time diaries were asked every 30 minutes for the first two weeks and every 1 hour for the second two weeks. Therefore, we collected 48 labels per days per person for the first two weeks, and 24 for the second two weeks, for a total of 114.830 labels.
+
+## Sensor Data
+
+No | HW Sensor | Estimated Frequency |  Category |
+|-------|--------|---------|---------|
+1 | Accelerometer | up to 10 samples per second | Big| 
+\hline
+2 | Gyroscope | up to 10 samples per second | Big |
+\hline
+3 | Light | up to 10 samples per second | Big |
+\hline
+4 | Location | Once every minute | Small |
+\hline
+5 | Magnetic Field | up to 10 samples per second | Big |
+\hline
+6 | Pressure | up to 10 samples per second | Big |
+
+# Data collection
+# Example of application
+
 
 You can use the [editor on GitHub](https://github.com/Gengis-Khan/SU2Dataset/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
