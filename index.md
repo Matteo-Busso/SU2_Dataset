@@ -22,7 +22,7 @@ Time diaries are a classic [data collection tool](), where respondents are asked
 2. “Where are you?” 
 3. “Who is with you?” 
 4. “What is your mood?” 
-![TD_Labels v2](https://github.com/Gengis-Khan/SU2Dataset/edit/gh-pages/images/TD_Labels v2.png)
+![TD_Labels v2](https://github.com/Gengis-Khan/SU2Dataset/edit/gh-pages/images/TD_Labels%v2.png)
 
 During the month of data collection, time diaries were asked every 30 minutes for the first two weeks and every 1 hour for the second two weeks. Therefore, we collected 48 labels per days per person for the first two weeks, and 24 for the second two weeks, for a total of 114.830 labels.
 
@@ -77,7 +77,7 @@ No | HW Sensor | Estimated Frequency |  Category |
 6 | Pressure | up to 10 samples per second | Big |
 
 # Data collection
-![SU2 Protocol](https://github.com/Gengis-Khan/SU2Dataset/edit/gh-pages/images/SU2 Protocol.png)
+![SU2 Protocol](https://github.com/Gengis-Khan/SU2Dataset/edit/gh-pages/images/SU2%Protocol.png)
 The data collection was conducted in an interdisciplinary framework, involving sociology and IT experts. The survey methodology adopted is a variant of the ESM. In our case, in addition to the self-reported question, data from the smartphone sensors were collected through an app called [iLog]().
 
 ## Timing
