@@ -19,18 +19,56 @@ Time diaries are a classic [data collection tool](), where respondents are asked
 2. “Where are you?” 
 3. “Who is with you?” 
 4. “What is your mood?” 
-{% include image.html file="TD_Labels%v2.png" url="https://github.com/Gengis-Khan/SU2Dataset/blob/gh-pages/images" caption="Time diaries labels" %}
-![TD_Labels v2](https://github.com/Gengis-Khan/SU2Dataset/blob/gh-pages/images/TD_Labels%v2.png)
+![TD_Labels v2](https://github.com/Gengis-Khan/SU2Dataset/edit/gh-pages/images/TD_Labels%v2.png)
 
 During the month of data collection, time diaries were asked every 30 minutes for the first two weeks and every 1 hour for the second two weeks. Therefore, we collected 48 labels per days per person for the first two weeks, and 24 for the second two weeks, for a total of 114.830 labels.
 
 ## Sensor Data
+The data from the sensors can be divided into: 
+-	Hardware (HW) sensors, namely the sensors that one can find in a phone, e.g., accelerometer, gyroscope, GPS. The complete list of HW sensors used in this survey is reported in Table 1 
+-	Software (SW) sensors, by which we mean all the SW events that can be collected from the Operating system and SW, for instance the Wifi the HW is connected and so on. The complete list of SW sensors is reported in Table 2
+-	QU sensors (where QU stands for Questionnaire), by which we mean events which relate to the compilation of the Time Use Diary, mainly related to the various execution times, e.g., when a question arrived or was answered. The complete list of QU sensors is reported in Table 3
+
 
 No | HW Sensor | Estimated Frequency |  Category |
 |-------|--------|---------|---------|
 1 | Accelerometer | up to 10 samples per second | Big| 
 2 | Gyroscope | up to 10 samples per second | Big |
 3 | Light | up to 10 samples per second | Big |
+4 | Location | Once every minute | Small |
+5 | Magnetic Field | up to 10 samples per second | Big |
+6 | Pressure | up to 10 samples per second | Big |
+
+
+No || SW Sensor | Estimated Frequency | Category |
+7 | Airplane Mode (ON/OFF) | On change | Small |
+8 | Battery Charge (ON/OFF) | On change | Small |
+9 | Battery Level | On change | Small |
+10 | Bluetooth Devices | Once every minute | Small |
+11 | Bluetooth LE (Low Energy) Devices | Once every minute | Small |
+12 | Cellular network info | Once every minute | Small |
+13 | Doze Mode (ON/OFF) | On change | Small |
+14 | Headset Status (ON/OFF) | On change | Small |
+15 | Movement Activity Label | Once every 30 seconds | Small |
+16 | Movement Activity per Time | Once every 30 seconds | Small |
+17 | Music Playback (no track information) | On change | Small |
+18 | Notifications received | On change | Small |
+19 | Proximity |  up to 10 samples per second | Small  |
+20 | Ring mode (Silent/Normal) | On change | Small |
+21 | Running Applications | Once every 5 seconds | Small |
+22 | Screen Status (ON/OFF) | On change | Small |
+23 | Step Counter | up to 10 samples per second | Small |
+24 | Step Detection | On change | Small |
+25 | Touch event | On change | Small |
+26 | User Presence |  On change | Small  |
+27 | WIFI Network Connected to | On change | Small |
+28 | WIFI Networks Available | Once every minute | Small |
+
+
+No | HW Sensor | Estimated Frequency |  Category |
+1 | Accelerometer | up to 10 samples per second | Big| 
+2 | Gyroscope | up to 10 samples per second | Big |
+3 | Light | up to 10 samples per second | Big|
 4 | Location | Once every minute | Small |
 5 | Magnetic Field | up to 10 samples per second | Big |
 6 | Pressure | up to 10 samples per second | Big |
