@@ -41,9 +41,10 @@ No | HW Sensor | Estimated Frequency |  Category |
 4 | Location | Once every minute | Small |
 5 | Magnetic Field | up to 10 samples per second | Big |
 6 | Pressure | up to 10 samples per second | Big |
-
+*Table 1. HW sensors.*
 
 No || SW Sensor | Estimated Frequency | Category |
+|-------|--------|---------|---------|
 7 | Airplane Mode (ON/OFF) | On change | Small |
 8 | Battery Charge (ON/OFF) | On change | Small |
 9 | Battery Level | On change | Small |
@@ -66,15 +67,18 @@ No || SW Sensor | Estimated Frequency | Category |
 26 | User Presence |  On change | Small  |
 27 | WIFI Network Connected to | On change | Small |
 28 | WIFI Networks Available | Once every minute | Small |
+*Table 2. SW sensors.*
 
 
 No | HW Sensor | Estimated Frequency |  Category |
+|-------|--------|---------|---------|
 1 | Accelerometer | up to 10 samples per second | Big| 
 2 | Gyroscope | up to 10 samples per second | Big |
 3 | Light | up to 10 samples per second | Big|
 4 | Location | Once every minute | Small |
 5 | Magnetic Field | up to 10 samples per second | Big |
 6 | Pressure | up to 10 samples per second | Big |
+*Table 3. Questionnaire sensors.*
 
 # Data collection
 ![SU2 Protocol](https://github.com/Gengis-Khan/SU2Dataset/edit/gh-pages/images/SU2%Protocol.png)
