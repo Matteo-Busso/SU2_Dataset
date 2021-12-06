@@ -19,8 +19,8 @@ Time diaries are a classic [data collection tool](), where respondents are asked
 2. “Where are you?” 
 3. “Who is with you?” 
 4. “What is your mood?” 
-
-![TD_Labels](https://github.com/Gengis-Khan/SU2Dataset/blob/gh-pages/images/TD_Labels%v2.png)
+{% include image.html file="TD_Labels%v2.png" url="https://github.com/Gengis-Khan/SU2Dataset/blob/gh-pages/images" caption="Time diaries labels" %}
+![TD_Labels v2](https://github.com/Gengis-Khan/SU2Dataset/blob/gh-pages/images/TD_Labels%v2.png)
 
 During the month of data collection, time diaries were asked every 30 minutes for the first two weeks and every 1 hour for the second two weeks. Therefore, we collected 48 labels per days per person for the first two weeks, and 24 for the second two weeks, for a total of 114.830 labels.
 
@@ -29,15 +29,10 @@ During the month of data collection, time diaries were asked every 30 minutes fo
 No | HW Sensor | Estimated Frequency |  Category |
 |-------|--------|---------|---------|
 1 | Accelerometer | up to 10 samples per second | Big| 
-\hline
 2 | Gyroscope | up to 10 samples per second | Big |
-\hline
 3 | Light | up to 10 samples per second | Big |
-\hline
 4 | Location | Once every minute | Small |
-\hline
 5 | Magnetic Field | up to 10 samples per second | Big |
-\hline
 6 | Pressure | up to 10 samples per second | Big |
 
 # Data collection
