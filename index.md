@@ -17,13 +17,14 @@ Were used to invite the students, to evaluate the app, and to understand their h
 The complete questionnaire can be found [here]()
 
 ## Time Diaries
-Time diaries are a classic [data collection tool](), where respondents are asked to indicate three main dimensions of their everyday life: the activities performed, the locations they visit, and the people around them. In this case we administered a version, following the [HETUS]() standard, implemented in the app [iLog](). Participants received a notification on their smartphone with four questions (see Figure), namely: 
+Time diaries are a classic data collection tool, where respondents are asked to indicate three main dimensions of their everyday life: the activities performed, the locations they visit, and the people around them. In this case we administered a version, following the [HETUS](https://ec.europa.eu/eurostat/web/time-use-surveys) standard, implemented in the app [iLog](http://datascientia.disi.unitn.it/ilog/). Participants received a notification on their smartphone with four questions (see Figure), namely: 
 1. “What are you doing?” 
 2. “Where are you?” 
 3. “Who is with you?” 
 4. “What is your mood?” 
 
-<img align="center" src="https://github.com/Gengis-Khan/SU2Dataset/blob/gh-pages/images/TD_Labels.png">
+![TD_Labels](https://github.com/Gengis-Khan/SU2Dataset/blob/gh-pages/images/TD_Labels.png)
+
 *Time Diaries labels*
 
 During the month of data collection, time diaries were asked every 30 minutes for the first two weeks and every 1 hour for the second two weeks. Therefore, we collected 48 labels per days per person for the first two weeks, and 24 for the second two weeks, for a total of 114.830 labels.
@@ -87,7 +88,9 @@ No | QU Sensor | Estimated Frequency | Category |
 # Data collection
 ![SU2 Protocol](https://github.com/Gengis-Khan/SU2Dataset/blob/gh-pages/images/SU2_Protocol.png)
 
-The data collection was conducted in an interdisciplinary framework, involving sociology and IT experts. The survey methodology adopted is a variant of the ESM. In our case, in addition to the self-reported question, data from the smartphone sensors were collected through an app called [iLog]().
+*The different phases of the data collection protocol*
+
+The data collection was conducted in an interdisciplinary framework, involving sociology and IT experts. The survey methodology adopted is a variant of the ESM. In our case, in addition to the self-reported question, data from the smartphone sensors were collected through an app called [iLog](http://datascientia.disi.unitn.it/ilog/).
 
 ## Timing
 The overall data collection process last for 6 weeks. The first two weeks were dedicated to sample recruitment by sending the first two questionnaires (invitation and assessment of habits). The remaining month was entirely dedicated to ESM through iLog, separated into two parts: during the first two weeks the notification time diaries was sent every half an hour, while for the second two weeks the notifications were reduced to one. The sensors were always collected with the same frequency. Questions that were not immediately answered were put in a FIFO queue, for a maximum of 12 questions. This means that a student could avoid answering for a maximum of 6 hours.
@@ -104,40 +107,19 @@ The strategy was based on a fixed salary and a series of bonuses. All participan
 Once the data was collected, two different preparation procedures were performed, namely data cleaning and anonymization. The first was aimed at consolidating the data and making it accessible, while the second was aimed at removing personal information from the datasets.
 
 # Example of application
+This dataset hasalready been used in various fields to build KG on the notion of context. Examples of this are the following articles:
+- Giunchiglia, F., Bignotti, E., & Zeni, M. (2017, March). Personal context modelling and annotation. In 2017 IEEE International Conference on Pervasive Computing and Communications Workshops (PerCom Workshops) (pp. 117-122). IEEE.
+- Giunchiglia, F., Zeni, M., Bignotti, E., & Zhang, W. (2018, March). Assessing annotation consistency in the wild. In 2018 IEEE International Conference on Pervasive Computing and Communications Workshops (PerCom Workshops) (pp. 561-566). IEEE.
+Chicago	
+- Osman, N., Chenu-Abente, R., Shen, Q., Sierra, C., & Giunchiglia, F. (2021). Empowering Users in Online Open Communities. SN Computer Science, 2(4), 1-19.
+Chicago	
+In any case, the diversity of the data collected makes the dataset flexible and adaptable, such as computational social science: 
+- Giunchiglia, F., Zeni, M., Gobbi, E., Bignotti, E., & Bison, I. (2018). Mobile social media usage and academic performance. Computers in Human Behavior, 82, 177-185.
+or machine learning:
+- Bontempelli, A., Teso, S., Giunchiglia, F., & Passerini, A. (2020). Learning in the wild with incremental skeptical gaussian processes. arXiv preprint arXiv:2011.00928.
 
+Finally, this approach is the basis of a hackaton conducted with [EUROSTAT](https://ec.europa.eu/eurostat) in 2019, as well as in the various data collections conducted within the European project [WeNet](https://www.internetofus.eu), based on Horizon 2020 funds.
 
-You can use the [editor on GitHub](https://github.com/Gengis-Khan/SU2Dataset/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Contact
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Gengis-Khan/SU2Dataset/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Do you want to acess our dataset? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
