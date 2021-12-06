@@ -113,6 +113,7 @@ This dataset hasalready been used in various fields to build KG on the notion of
 Chicago	
 - Osman, N., Chenu-Abente, R., Shen, Q., Sierra, C., & Giunchiglia, F. (2021). Empowering Users in Online Open Communities. SN Computer Science, 2(4), 1-19.
 Chicago	
+
 In any case, the diversity of the data collected makes the dataset flexible and adaptable, such as computational social science: 
 - Giunchiglia, F., Zeni, M., Gobbi, E., Bignotti, E., & Bison, I. (2018). Mobile social media usage and academic performance. Computers in Human Behavior, 82, 177-185.
 or machine learning:
