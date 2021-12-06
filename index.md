@@ -1,5 +1,8 @@
 # Dataset Description
-The dataset is composed by three sources of data: (i) Online questionnaire (synchronic); (ii) Time Diaries (Diachronic); Sensor data (Diachronic).
+The survey was conducted with 158 participants, and it is composed by three sources of data: (i) Online questionnaire (synchronic); (ii) Time Diaries (diachronic); Sensor data (diachronic).
+
+## Participants
+
 
 ## Online questionnaires 
 Were used to invite the students, to evaluate the app, and to understand their habits and routine. They are composed by attributes regarding:
@@ -19,7 +22,7 @@ Time diaries are a classic [data collection tool](), where respondents are asked
 2. “Where are you?” 
 3. “Who is with you?” 
 4. “What is your mood?” 
-![TD_Labels v2](https://github.com/Gengis-Khan/SU2Dataset/edit/gh-pages/images/TD_Labels%v2.png)
+![TD_Labels v2](https://github.com/Gengis-Khan/SU2Dataset/edit/gh-pages/images/TD_Labels v2.png)
 
 During the month of data collection, time diaries were asked every 30 minutes for the first two weeks and every 1 hour for the second two weeks. Therefore, we collected 48 labels per days per person for the first two weeks, and 24 for the second two weeks, for a total of 114.830 labels.
 
@@ -74,6 +77,23 @@ No | HW Sensor | Estimated Frequency |  Category |
 6 | Pressure | up to 10 samples per second | Big |
 
 # Data collection
+![SU2 Protocol](https://github.com/Gengis-Khan/SU2Dataset/edit/gh-pages/images/SU2 Protocol.png)
+The data collection was conducted in an interdisciplinary framework, involving sociology and IT experts. The survey methodology adopted is a variant of the ESM. In our case, in addition to the self-reported question, data from the smartphone sensors were collected through an app called [iLog]().
+
+## Timing
+The overall data collection process last for 6 weeks. The first two weeks were dedicated to sample recruitment by sending the first two questionnaires (invitation and assessment of habits). The remaining month was entirely dedicated to ESM through iLog, separated into two parts: during the first two weeks the notification time diaries was sent every half an hour, while for the second two weeks the notifications were reduced to one. The sensors were always collected with the same frequency. Questions that were not immediately answered were put in a FIFO queue, for a maximum of 12 questions. This means that a student could avoid answering for a maximum of 6 hours.
+
+## Sample recruitment
+The sample was selected within the entire student population of the University of Trento. All students were sent an invitation to participate in the survey, excluding a priori those who did not have a smartphone compatible with the study (only Android Operating System greater than 5.0) and did not regularly attend classes. After the first contact via email, the online questionnaire was sent to investigate their habits and routine, and finally it was sent a password to download and install the app iLog. 
+
+From 1042 responses were excluded those who were born after 1993, to limit the dynamics of students out-of-school or who did not participate in university life. Of the 860 candidates, 318 students were selected, weighting the sample in such a way that it was proportional to the student population of each department, in order to avoid the misrepresentation of daily routines due to the different schedules.
+
+## Incentive strategy
+The strategy was based on a fixed salary and a series of bonuses. All participants who filled in at least 75\% received €20 every two weeks and the opportunity to participate in the draw for 3 prizes of €100 for the first two weeks of participation and 3 prizes of €150 for the second two weeks. Furthermore, every day 3 prizes of €5 were drawn and communicated via email to the winning participants, in order to (i) keep the participants' attention high; (ii) encourage communication with the helpdesk.
+
+\subsection{Data preparation}
+Once the data was collected, two different preparation procedures were performed, namely data cleaning and anonymization. The first was aimed at consolidating the data and making it accessible, while the second was aimed at removing personal information from the datasets.
+
 # Example of application
 
 
