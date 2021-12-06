@@ -71,15 +71,14 @@ No | SW Sensor | Estimated Frequency | Category |
 
 *Table 2. SW sensors.*
 
-
-No | HW Sensor | Estimated Frequency |  Category |
+No | QU Sensor | Estimated Frequency | Category |
 |-------|--------|---------|---------|
-1 | Accelerometer | up to 10 samples per second | Big| 
-2 | Gyroscope | up to 10 samples per second | Big |
-3 | Light | up to 10 samples per second | Big|
-4 | Location | Once every minute | Small |
-5 | Magnetic Field | up to 10 samples per second | Big |
-6 | Pressure | up to 10 samples per second | Big |
+29 | Time Diary questions | On change | Small|
+30 | Time Diary confirmation | On change | Small|
+31  | Time Diary answers | On change | Small|
+32 | Task questions | On change | Small|
+33 | Task confirmation | On change | Small|
+34 | Task answers | On change | Small|
 
 *Table 3. Questionnaire sensors.*
 
