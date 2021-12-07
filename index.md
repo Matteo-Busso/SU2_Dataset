@@ -2,10 +2,7 @@
 The survey was conducted with 158 participants, and it is composed by three sources of data: (i) Online questionnaire (synchronic); (ii) Time Diaries (diachronic); Sensor data (diachronic).
 
 ## Participants
-|  | Female | Male | Total |
-|-------|--------|---------|--------|
-**Gender** | 77 | 81 | 158 |
-
+Of the 158 participants, 77 were Female and 81 were Male. Additional information are listed below.
 
 |  | Range | Average |
 |-------|--------|---------|
