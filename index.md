@@ -18,12 +18,12 @@ Were used to invite the students, to evaluate the app, and to understand their h
 1. Socio-demographics: age, gender, students’ accommodation(s) and flat mates
 2. Habits about travel, occupation, and university experience
 3. Psycho-social profile, concerning:
-- personality, collected with a 10-item short version of the [Big Five]() Inventory-44
-- attitude towards procrastination [Irrational Procrastination Scale (IPS)]()
-- smartphone habits [Smartphone Addiction Scale (SAV-SV)]()
-- perceived stress [Perceived Stress Scale]()
+- personality, collected with a 10-item short version of the [Big Five](https://pdfs.semanticscholar.org/4646/5a97ab883cc72d9f601263a208afae6fb31a.pdf) Inventory-44
+- attitude towards procrastination [Irrational Procrastination Scale (IPS)](https://prism.ucalgary.ca/bitstream/handle/1880/47914/Steel_PsychBulletin_2007_Postprint.pdf?sequence=1)
+- smartphone habits [Smartphone Addiction Scale (SAV-SV)](https://www.scirp.org/journal/paperinformation.aspx?paperid=78277)
+- perceived stress [Perceived Stress Scale](http://www.mindgarden.com/documents/PerceivedStressScale.pdf)
 
-The complete questionnaire can be found [here]()
+The complete [questionnaire](https://github.com/Gengis-Khan/SU2Dataset/blob/gh-pages/Documentation/SU2-Questionnaire.pdf) and the [codebook](https://github.com/Gengis-Khan/SU2Dataset/blob/gh-pages/Documentation/SU2-Questionnaire_codebook.pdf) can be found at the respective links.
 
 ## Time Diaries
 Time diaries are a classic data collection tool, where respondents are asked to indicate three main dimensions of their everyday life: the activities performed, the locations they visit, and the people around them. In this case we administered a version, following the [HETUS](https://ec.europa.eu/eurostat/web/time-use-surveys) standard, implemented in the app [iLog](http://datascientia.disi.unitn.it/ilog/). Participants received a notification on their smartphone with four questions (see Figure), namely: 
@@ -43,6 +43,8 @@ The data from the sensors can be divided into:
 -	Hardware (HW) sensors, namely the sensors that one can find in a phone, e.g., accelerometer, gyroscope, GPS. The complete list of HW sensors used in this survey is reported in Table 1 
 -	Software (SW) sensors, by which we mean all the SW events that can be collected from the Operating system and SW, for instance the Wifi the HW is connected and so on. The complete list of SW sensors is reported in Table 2
 -	QU sensors (where QU stands for Questionnaire), by which we mean events which relate to the compilation of the Time Use Diary, mainly related to the various execution times, e.g., when a question arrived or was answered. The complete list of QU sensors is reported in Table 3
+
+The complete documentation can be found [here]().
 
 
 No | HW Sensor | Estimated Frequency |  Category |
