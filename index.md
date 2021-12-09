@@ -131,4 +131,4 @@ Finally, this approach is the basis of a hackaton conducted with [EUROSTAT](http
 
 ### Contact
 
-Do you want to acess our dataset? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Do you want to acess our dataset? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) and contact us at [datadistribution.knowdive@unitn.it](datadistribution.knowdive@unitn.it).
