@@ -44,54 +44,57 @@ The data from the sensors can be divided into:
 The complete documentation can be found [here]().
 
 
-No | HW Sensor | Estimated Frequency |  Category |
-|-------|--------|---------|---------|
-1 | Accelerometer | up to 10 samples per second | Big| 
-2 | Gyroscope | up to 10 samples per second | Big |
-3 | Light | up to 10 samples per second | Big |
-4 | Location | Once every minute | Small |
-5 | Magnetic Field | up to 10 samples per second | Big |
-6 | Pressure | up to 10 samples per second | Big |
+No | HW Sensor | Estimated Frequency |  Category | Description |
+|-------|--------|---------|---------|---------|
+1 | Accelerometer | up to 20 samples per second | Big | measures the acceleration to which the phone is subjected and it captures it as a 3D vector |
+2 | Gyroscope | up to 20 samples per second | Big | measures the rotational forces to which the phone is subjected and it captures it as a 3D vector |
+3 | Linear Acceleration | up to 20 samples per second | Big | measures the acceleration force to which the phone is subjected and it captures it as a 3D vector |
+4 | Location | Once every minute | Small | returns the geocoordinates of where the phone is located, for more accuracy this sensor combines GPS and WIFI/cellular connections |
+5 | Magnetic Field | up to 20 samples per second | Big | measures the magnetic field to which the phone is subjected and it captures it as a 3D vector |
+6 | Pressure | up to 20 samples per second | Big | measures the ambient air pressure to which the phone is subjected |
 
 *Table 1. HW sensors.*
 
-No | SW Sensor | Estimated Frequency | Category |
-|-------|--------|---------|---------|
-7 | Airplane Mode (ON/OFF) | On change | Small |
-8 | Battery Charge (ON/OFF) | On change | Small |
-9 | Battery Level | On change | Small |
-10 | Bluetooth Devices | Once every minute | Small |
-11 | Bluetooth LE (Low Energy) Devices | Once every minute | Small |
-12 | Cellular network info | Once every minute | Small |
-13 | Doze Mode (ON/OFF) | On change | Small |
-14 | Headset Status (ON/OFF) | On change | Small |
-15 | Movement Activity Label | Once every 30 seconds | Small |
-16 | Movement Activity per Time | Once every 30 seconds | Small |
-17 | Music Playback (no track information) | On change | Small |
-18 | Notifications received | On change | Small |
-19 | Proximity |  up to 10 samples per second | Small  |
-20 | Ring mode (Silent/Normal) | On change | Small |
-21 | Running Applications | Once every 5 seconds | Small |
-22 | Screen Status (ON/OFF) | On change | Small |
-23 | Step Counter | up to 10 samples per second | Small |
-24 | Step Detection | On change | Small |
-25 | Touch event | On change | Small |
-26 | User Presence |  On change | Small  |
-27 | WIFI Network Connected to | On change | Small |
-28 | WIFI Networks Available | Once every minute | Small |
+No | SW Sensor | Estimated Frequency | Category | Description |
+|-------|--------|---------|---------|---------|
+7  | Activity Performed (Google Data)                   | Once every minute     | Small | returns a label identifying the activity performed by the user. This value is computed by Android using Google's Activity Recognition API along with low power signals from multiple sensors in the device. Possible activities are: _still, in\_vehicle, on\_bicycle, on\_foot, running, tilting, walking_ |
+8  | Audio from the internal microphone                 | 10 seconds per minute | Small | Audio from the internal microphone |
+9  | Audio mode (Silent/Normal)                     | On change             | Small | Audio from the internal microphone |
+10 | Battery Charge (ON/OFF)                        | On change             | Small | returns whether the phone is currently charging its battery |
+11 | Battery Level                                      | On change             | Small | returns the phone's battery level |
+12 | Cellular network info                              | Once every minute     | Small | returns information related to the cellular network (cellid, dbm, type) to which the phone is connected to |
+13 | Doze Modality (ON/OFF)                         | On change             | Small | returns whether the phone's doze mode is on or off. Doze mode is a low battery consumption state in which the phone enters after some time of not being used |
+14 | Flight Mode (ON/OFF)                           | On change             | Small | returns whether the phone's Airplane mode is on or off, Airplane mode turns off all the connectivity features of the phone |
+15 | Gravity                                            | 20 times per second   | Small | report the force of gravity on the axis |
+16 | Headset plugged in (ON/OFF)                    | On change             | Small | returns whether the headphones of the phone where connected |
+17 | Humidity                                           | 20 times per second   | Small | return ambient relative humidity.
+18 | Music Playback (no track information) (ON/OFF) | On change             | Small | eturns whether music is being played on the phone (yes or no) using the default music player from the operating system |
+19 | Notifications received                             | On change             | Small | measures when the phone receives a notification and when it is dismissed by the user |
+20 | Orientation                                        | 20 times per second   | Small | return the azimuth, pintch and roll.
+21 | Proximity                                          | On change             | Small | measures the distance between the user's head and the phone, depending on the phone it may be measured in centimeters (i.e., the absolute distance) or as labels (e.g, 'near', 'far') |
+22 | Rotation Vector                                    | 20 times per second   | Small | return the rotation vector component along the axis
+23 | Running Application                                | Once every 5 seconds  | Small | returns the name of the application (or application package) that is currently running in the foreground of the phone |
+24 | Screen Status (ON/OFF)                         | On change             | Small | returns whether the phone's screen is on or off |
+25 | Temperature                                        | 20 times per second   | Small | return the ambient air temperature.
+26 | Touch event                                        | On change             | Small | generates a touch value each time the user touches the screen |
+27 | WIFI Network Connected to                          | On change             | Small | returns information related to the WiFi network to which the phone is connected to, if connected will also report the WiFi network id |
+28 | WIFI Networks Available                            | Once every minute     | Small | returns all WiFi networks detected by the smartphone |
 
 *Table 2. SW sensors.*
 
-No | QU Sensor | Estimated Frequency | Category |
-|-------|--------|---------|---------|
-29 | Time Diary questions | On change | Small|
-30 | Time Diary confirmation | On change | Small|
-31  | Time Diary answers | On change | Small|
-32 | Task questions | On change | Small|
-33 | Task confirmation | On change | Small|
-34 | Task answers | On change | Small|
+No | QU Sensor | Estimated Frequency | Category | Description |
+|-------|--------|---------|---------|---------|
+29 | Time Diary questions | On change | Small| contains the question, the question id (for traceability purposes) and the timestamp when it was generated on the server and sent to the cloud provider for delivery |
+30 | Time Diary confirmation | On change | Small| contains the timestamp at which each question, identified by its unique id, has been delivered to the device of the participant (which may coincide or not with the time the participant sees it) |
+31 | Time Diary answers | On change | Small| contains the answer, the timestamp when it was saved in the server, and the difference between answer and notification times in milliseconds |
+32 | Task questions | On change | Small| contains the question and the timestamp when it was sent from the server |
+33 | Task confirmation | On change | Small| contains the timestamp when each specific question was notified to the participant |
+34 | Task answers | On change | Small| contains the answer, the timestamp when it was saved in the server, and the difference between answer and notification times in milliseconds |
 
 *Table 3. Questionnaire sensors.*
+
+In these three sensor tables, the frequency by which the sensors are captured is reported, according to the following conventions: _on change_ means that the value of the sensor is recorded only when the current value is changed (along with a timestamp of when it happened), _up to X samples per second_ means that for each second the value of the sensor will be stored up to maximum of X times (these values are estimated), and _once every Y_ means that the values of a sensor is recorded once the time Y has passed (these values are estimated).
+
 
 # Data collection
 ![SU2 Protocol](https://github.com/Gengis-Khan/SU2Dataset/blob/gh-pages/images/SU2_Protocol.png)
